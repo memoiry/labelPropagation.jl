@@ -154,7 +154,7 @@ function label_propagation(Mat_Label, Mat_Unlabel, labels; kernel_type = "rbf", 
     end
     label_function = zeros(num_samples, num_classes)
     label_function[1:num_label_samples,:] = clamp_data_label
-    label_function[num_label_samples:num_samples,:] = -1
+    label_function[num_label_samples+1:num_samples,:] = -1
 
     # graph construction
     affinity_matrix = buildGraph(MatX, kernel_type, rbf_sigma, knn_num_neighbors)
