@@ -56,8 +56,7 @@ show_example(Mat_Label, labels, Mat_Unlabel, res)
 ```
 
 <div  align="center">    
- <img src="https:\/\/ooo.0o0.ooo\/2017\/02\/05\/589732721ce62.png" width = "600" height = "300" alt="图片名称" align=center /></div>
-
+ <img src="https:\/\/ooo.0o0.ooo\/2017\/02\/05\/589732721ce62.png" width = "600" height = "300" /></div>
 
 
 It can be seen that as the iteration carries, label propagates between each nodes.
