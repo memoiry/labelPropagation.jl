@@ -55,8 +55,7 @@ res = reduce(hcat, res)
 show_example(Mat_Label, labels, Mat_Unlabel, res)  
 ```
 
-<img src="https:\/\/ooo.0o0.ooo\/2017\/02\/05\/589732721ce62.png" width = "600px" height = "300px" />
-
+![](https:\/\/ooo.0o0.ooo\/2017\/02\/05\/589736c5aedb8.png)
 
 It can be seen that as the iteration carries, label propagates between each nodes.
 
