@@ -25,11 +25,12 @@ Input matrix can be either data matrix or affinity matrix, both should contain a
 ## Installation
 
 Pkg.add("GadFly")
+
 Pkg.clond("https://github.com/memoiry/labelPropagation.jl")
 
 ## Example
 
-Example shown below uses Gadfly to draw the plot, so a installation of Gadfly is required.
+Example shown below uses Gadfly to draw the plot, so an installation of Gadfly is required.
 
 ```julia
 using labelPropagation
