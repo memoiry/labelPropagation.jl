@@ -15,11 +15,20 @@ These algorithms perform very well in practice. The cost of running can be very 
 
 Input matrix can be either data matrix or affinity matrix, both should contain a labels matrix for labeled nodes.
 
-### Kernel
+### kernel_type
 
   A function which projects a vector into some higher dimensional space. This implementation supprots RBF and KNN kernels. Using the RBF kernel generates a dense matrix of size O(N^2). KNN kernel will generate a sparse matrix of size O(k*N) which will run much faster. 
 
   We can set kernel to "knn" or "rbf"
+
+### loadCircleData
+
+This is a function to generate data for demonstration, just input the number of points is ok.
+
+
+### max_iter 
+
+max iteration times.
 
 
 ## Installation
@@ -46,7 +55,10 @@ res = reduce(hcat, res)
 show_example(Mat_Label, labels, Mat_Unlabel, res)  
 ```
 
-![](https:\/\/ooo.0o0.ooo\/2017\/02\/05\/58972de9a9fcb.png)
+![](https:\/\/ooo.0o0.ooo\/2017\/02\/05\/589732721ce62.png)
 
 It can be seen that as the iteration carries, label propagates between each nodes.
+
+For more detail, you can access the source code,  
+
 

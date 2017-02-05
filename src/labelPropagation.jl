@@ -25,9 +25,9 @@ function show_example(Mat_Label, labels, Mat_Unlabel, unlabel_data_labels :: Arr
     for i = 1:iter_size
         group[((i-1)*num_size+1):num_size*i] = i 
     end
-    df = DataFrame(x = mat[:,1], y = mat[:,2], xxgroup = vec(group), class = label[:])
+    df = DataFrame(x = mat[:,1], y = mat[:,2], iteration = vec(group), class = label[:])
     println("drawing the plot....Please Wait")
-    plot(df, x = "x", y = "y", xgroup = "xxgroup", color = "class", Geom.subplot_grid(Geom.point))
+    plot(df, x = "x", y = "y", xgroup = "iteration", color = "class", Geom.subplot_grid(Geom.point))
 end
 
 
