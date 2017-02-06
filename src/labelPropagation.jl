@@ -9,7 +9,8 @@ function show_example(Mat_Label, labels, Mat_Unlabel, unlabel_data_labels)
     mat = vcat(Mat_Label, Mat_Unlabel)
     label = vcat(labels, unlabel_data_labels)
     df = DataFrame(x = mat[:,1], y = mat[:,2], class = label)
-    println("drawing the plot.....Please Wait")
+    println("Computing finished")
+    println("Drawing the plot.....Please Wait(Actually Gadfly is quite slow in drawing the first plot)")
     plot(df, x = "x", y = "y", color = "class", Geom.point)
 end
 
@@ -211,7 +212,7 @@ function label_propagation(affinity_matrix, labels; kernel_type = "rbf", rbf_sig
     end
     label_function = zeros(num_samples, num_classes)
     label_function[1:num_label_samples,:] = clamp_data_label
-    label_function[num_label_samples:num_samples,:] = -1
+    label_function[num_label_samples+1:num_samples,:] = -1
 
     # start to propagation
     iter = 0;

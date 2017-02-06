@@ -39,7 +39,7 @@ Pkg.clond("https://github.com/memoiry/labelPropagation.jl")
 
 ## Example
 
-Example shown below uses Gadfly to draw the plot, so an installation of Gadfly is required.
+Example shown below uses Gadfly to draw the plot, so an installation of Gadfly is required. (
 
 ```julia
 using labelPropagation
@@ -57,7 +57,7 @@ show_example(Mat_Label, labels, Mat_Unlabel, res)
 
 ![](https:\/\/ooo.0o0.ooo\/2017\/02\/06\/58975f6f57770.png)
 
-It can be seen that as the iteration carries, label propagates between each nodes.
+It can be seen that as the iteration carries, label propagates between each nodes, which is quite beautiful.
 
 For more detail, you can access the source code,  
 
