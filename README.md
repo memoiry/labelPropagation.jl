@@ -35,7 +35,7 @@ max iteration times.
 
 Pkg.add("GadFly")
 
-Pkg.clond("https://github.com/memoiry/labelPropagation.jl")
+Pkg.clone("https://github.com/memoiry/labelPropagation.jl")
 
 ## Example
 
